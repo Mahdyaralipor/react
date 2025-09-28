@@ -1,10 +1,9 @@
-export function CourseBox(props) {
-    console.log(props)
+export function CourseBox({title, details = "default message"}) {
+    
     return(
         <div>
-            <h2>{props?.course?.title}</h2>
-            <p>{props?.course?.details}</p>
-            <span>{props?.course?.time}</span>
+            <h2>{title}</h2>
+            <p>{details}</p>
         </div>
     )
 }
