@@ -1,9 +1,10 @@
-export function CourseBox() {
+export function CourseBox(props) {
+    console.log(props)
     return(
         <div>
-            <h2>Course Title</h2>
-            <p>Course Ditails</p>
-            <span>time: 10</span>
+            <h2>{props?.title}</h2>
+            <p>{props?.details}</p>
+            <span>{props?.time}</span>
         </div>
     )
 }
