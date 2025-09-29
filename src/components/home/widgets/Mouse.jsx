@@ -1,5 +1,7 @@
 export default function Mouse() {
-    
+    const handleStyle = {
+        backgroundColor : 'red'
+    }
     const enter = () => {
         console.log("mouse enter")
     }
@@ -8,7 +10,7 @@ export default function Mouse() {
     }
     return (
         <div>
-            <h1 onMouseEnter={enter} onMouseLeave={leave}>Mouse</h1>
+            <h1 style={handleStyle} onMouseEnter={enter} onMouseLeave={leave}>Mouse</h1>
         </div>
     )
 }
