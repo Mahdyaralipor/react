@@ -1,5 +1,5 @@
 import { Header } from "./components/layouts/Header"
-import { Main } from "./components/home/Main"
+import { Main } from "./components/layouts/Main"
 import { Footer } from "./components/layouts/Footer"
 
 export function Home() {
@@ -9,7 +9,6 @@ export function Home() {
             <Header />
             <Main />
             <Footer />
-            <p className="bg-red-600">tedsadst</p>
         </>
     )
 }
